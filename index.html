@@ -9,8 +9,9 @@ $msg = 0;
 	<title>Formulario</title>
 </head>
 <body>
-
-
+	<?php if($msg=="enviado"): ?>
+	<h1>MEnsagem enviada, agradecemos seu contatp!</h1>
+	<?php else :?>
 	<fieldset>
 		<legend><h3>Formulário de contatos</h3></legend>
 		<form action="processaForm.php" method="get">
@@ -25,6 +26,6 @@ $msg = 0;
 			<input  type="submit">
 		</form>
 	</fieldset>
-
+<?php endif;?>
 </body>
 </html>
