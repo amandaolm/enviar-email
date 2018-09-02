@@ -17,7 +17,7 @@ $msg = $_REQUEST['assunto'];
 	$header = "From: $email Reply-to: $email";
 	$header .= "Content-Type: text/html; charset= utf-8";
 
-mail($para, $assunto, $corpo, $header);
+@mail($para, $assunto, $corpo, $header);
 
 header("location:index.php?msg=enviado");
 
